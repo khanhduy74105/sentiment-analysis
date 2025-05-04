@@ -1,0 +1,53 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+*.env
+
+# PyTorch / Transformers artifacts
+*.pt
+*.bin
+*.ckpt
+*.h5
+*.onnx
+
+# HuggingFace Transformers cache
+.cache/
+**/checkpoint-*/
+
+# Model and tokenizer directories
+/sentiment-model/
+models/
+output/
+logs/
+
+# Dataset files
+*.csv
+*.tsv
+*.json
+*.xlsx
+*.pkl
+*.npy
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code and IDE config
+.vscode/
+.idea/
+
+# Colab / Jupyter auto files
+*.ipynb~
+
+# Misc
+*.log
