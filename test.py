@@ -4,8 +4,8 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
 # Load the model and tokenizer
-model = AutoModelForSequenceClassification.from_pretrained("./sentiment-model")
-tokenizer = AutoTokenizer.from_pretrained("./sentiment-model")
+model = AutoModelForSequenceClassification.from_pretrained("./my-finetuned-model")
+tokenizer = AutoTokenizer.from_pretrained("./my-finetuned-model")
 
 # Prediction function
 def predict_sentiment(text):
@@ -19,7 +19,7 @@ def predict_sentiment(text):
 
 # Example usage
 if __name__ == "__main__":
-    example_text = "this product ok, but not too much!"
+    example_text = 'How are you doing today?'
     sentiment = predict_sentiment(example_text)
     print("Text:", example_text)
     print("Predicted Sentiment:", sentiment)
